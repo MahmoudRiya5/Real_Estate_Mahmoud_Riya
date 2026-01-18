@@ -1,10 +1,11 @@
+import FAQ from "../componant/FAQ/FAQ"
 import NavBar from "../componant/NavBar/NavBar"
 
 const Home = () => {
   return (
     <div>
-      <NavBar/>
-      hello from home
+      {/* <NavBar/> */}
+      <FAQ/>
     </div>
   )
 }
