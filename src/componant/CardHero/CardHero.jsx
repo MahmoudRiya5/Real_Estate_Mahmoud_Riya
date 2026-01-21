@@ -6,14 +6,9 @@ export const CardHero = ({ title, icon, arrowIcon }) => {
             <div className="arrow-wrapper">
                 <img src={arrowIcon} alt="arrow" className="arrow-icon" />
             </div>
-
-
-            <div className="icon-outer-ring">
-                <div className="icon-inner-circle">
-                    <img src={icon} alt={title} className="card-main-icon" />
-                </div>
+            <div className="outer-circle">
+                <img src={icon} alt={title} className="card-main-icon" />
             </div>
-
 
             <h3 className="card-title">{title}</h3>
         </div>

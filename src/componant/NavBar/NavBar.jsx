@@ -7,7 +7,7 @@ const NavBar = ({items=[],btn}) => {
   return (
     <nav className={`ALi-nav ${show ? 'nav-open' : ''}`}>
       <div className="ALi-logo">
-        <img src="./assets/icons/estatelogo.png" alt="navicon" />
+        <img src="./assets/icons/estatelogo.png" alt="navicon" className="Ali-img"/>
       </div>
 
       <ul className={`ALi-ul ${show ? 'open' : ''}`}>

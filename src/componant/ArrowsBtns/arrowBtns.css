@@ -2,13 +2,13 @@
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-
     button {
         width: 58px;
         height: 58;
         padding:14px 14px 14px 32px;
         border: 1px solid var(--grey-15);
         border-radius: 50%;
+        background-color: var(--black-primary);
 
         img{
             width: 30px;
@@ -31,7 +31,7 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 992px) {
     .arrowsIcons {
         justify-content: space-between;
     }

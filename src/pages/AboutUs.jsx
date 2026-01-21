@@ -2,9 +2,6 @@
 const AboutUs = () => {
   return (
     <>
-    
-      
-      hello from AboutUs
     </>
   )
 }

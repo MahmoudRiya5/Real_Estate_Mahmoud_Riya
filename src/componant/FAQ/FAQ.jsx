@@ -21,8 +21,8 @@ const FAQ = () => {
         checkIfMobile();
 
         window.addEventListener('resize', checkIfMobile);
-        return()=>{
-            window.removeEventListener('resize',checkIfMobile)
+        return () => {
+            window.removeEventListener('resize', checkIfMobile)
         }
 
     }, []);
@@ -56,43 +56,46 @@ const FAQ = () => {
         }
     ]
     return (
-        <div className='faqContainer'>
-            <Sparkles />
-            <Title
-                title='Frequently Asked Questions'
-                subTitle="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
-            />
-            {!isMobile ?
-                <div className="cardsContainer">
-                    {cardsData.map((card, index) => (
+        <section className='faqSectionContainer'>
+            <div className='faqContainer'>
+                <Sparkles />
+                <Title
+                    title='Frequently Asked Questions'
+                    subTitle="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
+                />
+                {!isMobile ?
+                    <div className="cardsContainer">
+                        {cardsData.map((card, index) => (
+                            <FaqCards
+                                key={index}
+                                question={card.question}
+                                description={card.description}
+                            >
+                                <BtnsSecondStyle
+                                    btnTitle='Read More'
+                                />
+                            </FaqCards>
+                        ))}
+                    </div>
+                    :
+                    <div className="mobileSlider">
                         <FaqCards
-                        key={index}
-                        question={card.question}
-                        description={card.description}
-                        >
+                            question={cardsData[currentCard].question}
+                            description={cardsData[currentCard].description}>
                             <BtnsSecondStyle
                                 btnTitle='Read More'
                             />
                         </FaqCards>
-                    ))}
-                </div>
-                :
-                <div className="mobileSlider">
-                    <FaqCards
-                    question={cardsData[currentCard].question}
-                    description={cardsData[currentCard].description}>
-                        <BtnsSecondStyle
-                            btnTitle='Read More'
-                        />
-                    </FaqCards>
-                </div>
-            }
-            <hr />
-            <ArrowsBtns
-            onPrev={prevCard}
-            onNext={nextCard}
-            />
-        </div>
+                    </div>
+                }
+                <hr />
+                <ArrowsBtns
+                    onPrev={prevCard}
+                    onNext={nextCard}
+                />
+            </div>
+        </section>
+
     )
 }
 
