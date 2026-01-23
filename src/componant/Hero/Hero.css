@@ -4,41 +4,49 @@
     align-items: center;
     background-color: #141414;
     color: white;
-
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 .oneImg {
     width: 100%;
     overflow: hidden;
 }
-.oneImg img{
+
+.oneImg img {
     width: 100%;
     object-fit: contain;
+    margin: 0
 }
 
 .hero-element {
-    
+
     padding-right: 100px;
     padding-left: 100px;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .hero-element h1 {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
+
 .hero-element p {
     font-size: 0.8rem;
     color: #999;
     margin-bottom: 30px;
 }
+
 .buttons {
     display: flex;
     gap: 15px;
     margin-top: 50px;
 }
+
 .firstButton,
 .secButton {
     padding: 14px 28px;
@@ -50,23 +58,28 @@
     border: none;
     text-transform: capitalize;
 }
+
 .firstButton {
     background-color: #1a1a1a;
     color: white;
     border: 1px solid #262626;
 }
+
 .firstButton:hover {
     background-color: #262626;
 }
+
 .secButton {
     background-color: #703BF7;
     color: white;
-    box-shadow: 0px 4px 15px rgba(112, 59, 247, 0.3);
+    /* box-shadow: 0px 4px 15px rgba(112, 59, 247, 0.3); */
 }
+
 .secButton:hover {
     background-color: #5e2ed3;
     transform: translateY(-2px);
 }
+
 .firstButton,
 .secButton {
     padding: 12px 24px;
@@ -75,15 +88,18 @@
     border: none;
     font-weight: 500;
 }
+
 .firstButton {
     background-color: #1a1a1a;
     color: white;
     border: 1px solid #333;
 }
+
 .secButton {
     background-color: #703BF7;
     color: white;
 }
+
 .img-hero {
     flex: 1;
     display: flex;
@@ -100,20 +116,20 @@
 
 .cards {
     display: flex;
-    gap: 15px;
-    margin-top: 50px;
+    gap: 20px;
+    margin-top: 60px;
 }
 
 .card-item {
+    /* width: 239px; */
     background-color: #1A1A1A;
     border: 1px solid #262626;
-    padding: 15px 25px;
+    padding: 16px 24px;
     border-radius: 10px;
-    flex: 1;
-    text-align: left;
 }
 
 .card-item h2 {
+    background-color: #1A1A1A;
     color: white;
     font-size: 24px;
     margin-bottom: 5px;
@@ -124,19 +140,29 @@
     color: #999999;
     font-size: 14px;
     margin: 0;
+    background-color: #1A1A1A;
 }
-@media (max-width: 576px) {
+
+@media (max-width: 992px) {
+    .card-item h2 {
+        color: white;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
     .hero {
         flex-direction: column-reverse;
-        padding:20px;
+        padding: 20px;
         gap: 30px;
     }
+
     .oneImg {
         width: 100%;
         display: flex;
         justify-content: center;
-        
-        }
+
+    }
 
     .oneImg img {
         width: 85%;
@@ -165,12 +191,16 @@
         width: 100%;
         text-align: center;
     }
+    .hero-cards-section {
+        margin-top: 0 !important;
+    }
 
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         margin-top: 30px;
+        text-align: center;
     }
 
     .card-item {
@@ -179,11 +209,9 @@
 
     .card-item:last-child {
         grid-column: span 2;
-        text-align: center;
     }
 }
-@media (max-width: 992px) {
-        .card-item h2 {
-    color: white;
-    font-size: 18px;}
+
+@media (max-width: 576px) {
+    
 }

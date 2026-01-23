@@ -5,7 +5,12 @@ import Properties from "./pages/Properties"
 import Services from "./pages/Services"
 import ContactUs from "./pages/ContactUs"
 import TopHeader from "./componant/TopHeader/TopHeader"
+<<<<<<< Updated upstream
 import NavBar from "./componant/NavBar/NavBar"
+=======
+import FAQ from "./componant/FAQ/FAQ"
+
+>>>>>>> Stashed changes
 
 function App(){
   const navItems=[
@@ -47,6 +52,12 @@ function App(){
         <Route path="/services" element={<Services/>} />
         <Route path="/contact" element={<ContactUs/>} />
       </Routes>
+<<<<<<< Updated upstream
+=======
+
+{/* <StartSection /> */}
+      {/* <Footer /> */}
+>>>>>>> Stashed changes
       </>
     
   )

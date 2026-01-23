@@ -1,0 +1,52 @@
+.faqSectionContainer {
+    background-color: var(--black-primary);
+    padding: 110px 137px;
+
+    .faqContainer {
+
+        .cardsContainer {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .mobileSlider {
+            display: flex;
+        }
+
+        hr {
+            margin: 40px 0 16px;
+            border: 1px solid var(--grey-15);
+        }
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .faqSectionContainer {
+        padding: 90px 66px;
+
+        .faqContainer {
+            .cardsContainer {
+                gap: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .mobileSlider {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 390px) {
+    .faqSectionContainer {
+        padding: 85px 8px;
+
+        .faqContainer {
+            /* width: 358px; */
+        }
+    }
+}
