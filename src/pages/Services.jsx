@@ -15,7 +15,7 @@ const Services = () => {
     { title: "Financial Peace of Mind", desc: "Managing property finances can be complex. Our financial experts take care of rent collection", icon: "/assets/icons/servicepage/effortless/financial.svg" },
     { title: "Legal Guardian", desc: "Stay compliant with property laws and regulations effortlessly.", icon: "/assets/icons/servicepage/effortless/sun.svg" },
   ];
-
+  
   return (
   <div>
       {/* استدعاء السكشن الأول */}
