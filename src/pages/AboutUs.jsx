@@ -2,11 +2,11 @@ import Hero from "../componant/Hero/Hero"
 import OurAchievements from "../componant/OurAchievements/OurAchievements"
 import './AboutUs.css'
 
-import NavBar from "../componant/NavBar/NavBar"
 import Experience from "../componant/Experience/Experience";
 import MeetTheEstateinTeam from "../componant/MeetTheEstateinTeam/MeetTheEstateinTeam"
 const AboutUs = () => {
   return (
+    <>
     <div>
       <Hero
         title="Our Journey"
@@ -20,7 +20,7 @@ const AboutUs = () => {
       />
 
     </div>
-    <>  
+      
       <Experience/>
       <MeetTheEstateinTeam/>
     </>
