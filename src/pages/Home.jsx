@@ -1,25 +1,16 @@
 
-<<<<<<< Updated upstream
-import NavBar from "../componant/NavBar/NavBar"
-=======
 import NavBar from "../componant/NavBar/NavBar";
 import Testimonials from "../componant/Testimonials/Testimonials.jsx";
 import FAQ from "../componant/FAQ/FAQ"
->>>>>>> Stashed changes
+import NavBar from "../componant/NavBar/NavBar"
+import NavBar from "../componant/NavBar/NavBar";
+import Testimonials from "../componant/Testimonials/Testimonials.jsx";
+import FAQ from "../componant/FAQ/FAQ"
 import Hero from "../componant/Hero/Hero"
 import CardHero from "../componant/CardHero/CardHero"
 import './Home.css'
+import OurClientsSay from "../componant/OurClientsSay/OurClientsSay.jsx";
 const Home = () => {
-<<<<<<< Updated upstream
-=======
-  //   return (
-  //     <div>
-  //       <NavBar/>
-  // <Testimonials/>
-  //     </div>
-  //   );
-  // };
->>>>>>> Stashed changes
   return (
     <>
       <div className="hero-cards-section">
@@ -53,10 +44,11 @@ const Home = () => {
           />
         </div>
       </div>
+      <OurClientsSay/>
       <FAQ/>
-
     </>
   )
 }
+
 
 export default Home
