@@ -1,0 +1,268 @@
+/* الإعدادات العامة للسكشن */
+.ls-contact-section {
+    background-color:var( --black-primary); 
+    color:var(--white1);
+    padding-left: 162px;
+    padding-right: 162px;
+    gap: 80px;
+}
+
+/* الهيدر */
+.ls-contact-header {
+    padding-right: 300px;
+    margin-bottom: 80px;
+    gap: 14px;
+}
+.ls-contact-header p {
+    color: var( --gray-60);
+}
+
+/* تقسيم المحتوى */
+.ls-contact-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid var(--grey-15);
+    padding: 100px;
+    gap: 50px;
+}
+
+/* توزيع الحقول داخل الـ 3 divs */
+.ls-form-fields-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px ;
+}
+
+.ls-form-row-three, .ls-form-row-mixed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+/* تنسيق المدخلات */
+.ls-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ls-input-group input, 
+.ls-input-group select, 
+.ls-input-group textarea {
+    background-color: var(--grey-10);
+    border: 1px solid var(--grey-15);
+    padding: 24px 20px;
+    border-radius: 8px;
+    color: var( --gray-40);
+    width: 100%;
+}
+
+.ls-form-row-message textarea {
+    height: 170px;
+    resize: none;
+}
+
+/* الـ div السفلي للأزرار */
+.ls-form-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.ls-checkbox-group {
+    color:  var( --gray-60);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ls-checkbox-group label {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    }
+.ls-checkbox-group input[type= "checkbox"] {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    background-color: var(--grey-10);
+    border-radius: 4px;
+    border: 1px solid  var(--grey-15);
+    cursor: pointer;
+}
+
+.ls-checkbox-group span {
+    text-decoration: underline;
+}
+
+.ls-send-btn {
+    background-color:var(--purple-60); 
+    color: var(--white1);
+    padding: 18px 46px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 67px;
+}
+
+/* Responsive */
+/* التنسيق للابتوب (1440px) */
+@media (max-width: 1440px) {
+    .ls-contact-section {
+        padding-left: 80px;
+        padding-right: 80px;
+        gap: 60px;
+    }
+    /* الهيدر */
+    .ls-contact-header {
+        padding-right: 250px;
+        margin-bottom: 60px;
+        gap: 10px;
+    }
+    /* تقسيم المحتوى */
+    .ls-contact-content-wrapper {
+        padding: 80px;
+        gap: 30px;
+    }
+    /* توزيع الحقول داخل الـ 3 divs */
+    .ls-form-fields-container { gap: 30px;}
+    .ls-form-row-three, .ls-form-row-mixed {gap: 30px;}
+
+    /* تنسيق المدخلات */
+    .ls-input-group {gap: 14px;}
+
+    .ls-input-group input, 
+    .ls-input-group select, 
+    .ls-input-group textarea {
+        padding: 16px 20px;
+        border-radius: 6px;
+    }
+    .ls-form-row-message textarea {height: 122px;}
+
+    /* الـ div السفلي للأزرار */
+    .ls-form-footer-container {
+        margin-top: 30px;
+        gap: 50px;
+    }
+    .ls-checkbox-group {gap: 6px;}
+    .ls-checkbox-group label {font-size: 16px;}
+    .ls-checkbox-group input[type= "checkbox"] {
+        width: 24px;
+        height: 24px;
+    }
+    .ls-send-btn {
+        padding: 14px 34px;
+        border-radius: 6px;
+    }
+}
+@media (max-width: 992px) and (min-width: 577px) {
+    .ls-contact-header {
+    padding: 0px;
+    margin-bottom: 80px;
+    gap: 14px;}
+    
+    .ls-form-fields-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ls-contact-content-wrapper {
+        width: 100%;
+        padding: 20px;
+        gap: 30px;
+        
+    }
+    .ls-form-row-three, .ls-form-row-mixed {
+        display: contents;
+        justify-content:flex-start;
+        gap: 10px;
+    }
+    .ls-form-footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+        gap: 20px;
+    }
+    .ls-input-group label { font-size: 12px;}
+    .ls-send-btn {
+        width: 100%;
+        padding: 14px 34px;
+        border-radius: 6px;
+    }
+    
+    .ls-form-row-message { grid-column: span 2;}
+}
+    .ls-send-btn {
+        white-space: nowrap;
+}
+/* ريسبونسف للموبايل */
+@media (max-width: 576px) {
+    /* الإعدادات العامة للسكشن */
+    .ls-contact-section {
+        padding-left: 17px;
+        padding-right: 17px;
+        gap: 40px;
+    }
+    /* الهيدر */
+    .ls-contact-header {
+        padding: 0;
+        margin-bottom: 40px;
+        gap: 8px;
+    }
+    /* تقسيم المحتوى */
+    .ls-contact-content-wrapper {
+        width: 100%;
+        padding: 20px;
+        gap: 30px;
+        
+    }
+    /* توزيع الحقول داخل الـ 3 divs */
+    .ls-form-fields-container {
+        width: 100%;
+        flex-direction: column;
+        align-items:stretch;
+        gap: 20px;
+    }
+    .ls-form-row-three, .ls-form-row-mixed {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+    /* تنسيق المدخلات */
+    .ls-input-group {
+        width: 100%;
+        gap: 10px;
+    }
+    .ls-input-group input, 
+    .ls-input-group select, 
+    .ls-input-group textarea {
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 6px;
+    }
+    .ls-form-row-message textarea {height: 90px;}
+
+    /* الـ div السفلي للأزرار */
+    .ls-form-footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+        gap: 20px;
+    }
+    .ls-checkbox-group {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        gap: 6px;
+    }
+    .ls-checkbox-group label {font-size: 14px;}
+    .ls-checkbox-group input[type= "checkbox"] {
+        width: 24px;
+        height: 24px;
+    }
+    .ls-send-btn {
+        width: 100%;
+        padding: 14px 34px;
+        border-radius: 6px;
+    }
+}
