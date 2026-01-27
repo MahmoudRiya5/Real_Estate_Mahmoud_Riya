@@ -1,7 +1,10 @@
+
 import HeroServses from '../componant/HeroServses/HeroServses.jsx';
 import ExploreWorlds from '../componant/ExploreWorld/ExploreWorld.jsx';
 import Title from '../componant/Title/Title.jsx';
 import CardHero from '../componant/CardHero/CardHero.jsx';
+import LetConnect  from '../componant/LetConnect/LetConnect'
+import DiscoverOurOfficeLocations from "../componant/DiscoverOurOfficeLocations/DiscoverOurOfficeLocations"
 const ContactUs = () => {
   return (
     <>
@@ -34,8 +37,9 @@ const ContactUs = () => {
               />
             </div></div>
       <ExploreWorlds />
-    </>
-  )
-}
-
+<LetConnect />
+<DiscoverOurOfficeLocations/>
+ <>
+  )}
+    
 export default ContactUs
