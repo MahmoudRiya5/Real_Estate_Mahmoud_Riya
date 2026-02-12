@@ -14,23 +14,11 @@ const ComprehensivePricingDetails = () => {
   };
   return (
     <div className="za-ComprehensiveContainer">
-      {/* <Sparkles /> */}
-      {/* <Title */}
-      {/* title="Comprehensive Pricing Details" */}
-      {/* subTitle="At Estatein, transparency is key. We want you to have a clear understanding of all costs associated with your property investment. Below, we break down the pricing for Seaside Serenity Villa to help you make an informed decision" */}
-      {/* /> */}
-
+     
       <SectionHeader
         sectionTitle={sectionInfo.title}
         sectionBrief={sectionInfo.brief}
       />
-      {/* <div className="za-note">
-        <h3>Note</h3>
-        <p>
-          The figures provided above are estimates and may vary depending on the
-          property, location, and individual circumstances.
-        </p>
-      </div> */}
 
       <Note
         noteLabel={

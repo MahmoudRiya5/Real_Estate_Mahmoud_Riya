@@ -28,17 +28,17 @@ const FearturedPropertySection = () => {
       bathrooms: "2-bathroom",
       price: "$550,000",
     },
-    // {
-    //   key: 3,
-    //   imageLink:
-    //     "/assets/img/Home-Poperty/Property,home-Rustic.jpg",
-    //   propertyName: "Rustic Retreat Cottage",
-    //   propertyDescription:
-    //     "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
-    //   bedrooms: "3-bedroom",
-    //   bathrooms: "3-bathroom",
-    //   price: "$550,000",
-    // },
+    {
+      key: 3,
+      imageLink:
+        "/assets/img/Home-Poperty/Property,home-Rustic.jpg",
+      propertyName: "Rustic Retreat Cottage",
+      propertyDescription:
+        "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
+      bedrooms: "3-bedroom",
+      bathrooms: "3-bathroom",
+      price: "$550,000",
+    },
   ];
 
   const sectionInfo = {

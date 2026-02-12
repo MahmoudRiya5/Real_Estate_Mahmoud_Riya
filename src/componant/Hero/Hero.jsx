@@ -42,8 +42,7 @@ export const Hero = ({ title, desc, firstButton, secButton, oneImg }) => {
         <div className="buttons">
           <SecondaryButton buttonLabel={"Learn More"} />
           <PrimaryButton buttonLabel={"Browse Properties"} />
-          {/* {firstButton && <button className="firstButton">{firstButton}</button>}
-          {secButton && <button className="secButton">{secButton}</button>} */}
+
         </div>
         <div className="cards">
           {statistics.map((statistic) => (
@@ -52,20 +51,7 @@ export const Hero = ({ title, desc, firstButton, secButton, oneImg }) => {
               cardBrief={statistic.brief}
             />
           ))}
-          {/* <div className="card-item">
-            <h2>200+</h2>
-            <p>Happy Customers</p>
-          </div> */}
 
-          {/* <div className="card-item">
-            <h2>10k+</h2>
-            <p>Properties For Clients</p>
-          </div> */}
-
-          {/* <div className="card-item">
-            <h2>16+</h2>
-            <p>Years of Experience</p>
-          </div> */}
         </div>
       </div>
       <div className="oneImg">

@@ -1,6 +1,7 @@
 import PropertyValuation from "../componant/PropertyValuation/PropertyValuation.jsx";
 import HeroServses from "../componant/HeroServses/HeroServses.jsx";
 import SmartInvestmentsSection from "../componant/SmartInvestmentsSection/SmartInvestmentsSection.jsx";
+import "./Services.css";
 const Services = () => {
   const propertyValues = [
     {
@@ -32,17 +33,20 @@ const Services = () => {
   const managementCards = [
     {
       title: "Tenant Harmony",
-      brief: "Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies.",
+      brief:
+        "Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies.",
       iconLink: "/assets/icons/servicepage/effortless/tenant.svg",
     },
     {
       title: "Maintenance Ease",
-      brief: "Say goodbye to property maintenance headaches. We handle all aspects of property upkeep.",
+      brief:
+        "Say goodbye to property maintenance headaches. We handle all aspects of property upkeep.",
       iconLink: "/assets/icons/servicepage/effortless/maintenance.svg",
     },
     {
       title: "Financial Peace of Mind",
-      brief: "Managing property finances can be complex. Our financial experts take care of rent collection",
+      brief:
+        "Managing property finances can be complex. Our financial experts take care of rent collection",
       iconLink: "/assets/icons/servicepage/effortless/financial.svg",
     },
     {
@@ -53,7 +57,7 @@ const Services = () => {
   ];
 
   return (
-    <div>
+    <section className="mr-services">
       <HeroServses />
       <div>
         <PropertyValuation
@@ -74,7 +78,7 @@ const Services = () => {
 
         <SmartInvestmentsSection />
       </div>
-    </div>
+    </section>
   );
 };
 

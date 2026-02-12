@@ -1,5 +1,5 @@
 .mr-icon-button {
-    background: none;
+    background: var(--black-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,4 +38,8 @@
             height: 24px;
         }
     }
+}
+
+.mr-icon-button:hover {
+    background: var(--grey-10s);
 }

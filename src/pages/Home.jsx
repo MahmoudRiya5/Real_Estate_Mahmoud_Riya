@@ -48,30 +48,11 @@ const Home = () => {
             />
           ))}
 
-          {/* <HeroCard
-            title="Find Your Dream Home"
-            icon="/icons/homepage/hero/shop.png"
-            arrowIcon="/icons/homepage/hero/arrow-right-up.svg"
-          />
-          <HeroCard
-            title="Unlock Property Value "
-            icon="/icons/homepage/hero/property-value.png"
-            arrowIcon="/icons/homepage/hero/arrow-right-up.svg"
-          />
-          <HeroCard
-            title="Effortless Property Management"
-            icon="/icons/homepage/hero/buildings.png"
-            arrowIcon="/icons/homepage/hero/arrow-right-up.svg"
-          />
-          <HeroCard
-            title="Smart Investments, Informed Decisions"
-            icon="/icons/homepage/hero/sun.png"
-            arrowIcon="/icons/homepage/hero/arrow-right-up.svg"
-          /> */}
+  
         </div>
       </div>
       {/* Mahmoud Riya: i stopped the FeaturedPropertiesSection cause Lama will redesign it due to slider issues */}
-      {/* <FeaturedPropertiesSection /> */}
+      <FeaturedPropertiesSection />
       <OurClientsSay />
       <FAQ />
     </>

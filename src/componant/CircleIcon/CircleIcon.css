@@ -33,3 +33,7 @@
         }
     }
 }
+
+.mr-circle-icon:hover {
+    background-color: var(--grey-15);
+}

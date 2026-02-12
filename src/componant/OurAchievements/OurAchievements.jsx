@@ -30,9 +30,6 @@ export const OurAchievements = ({ title, desc }) => {
   ];
   return (
     <div className="hala-our-achievements-section">
-      {/* <div className="hala-achievements-container"> */}
-      {/* <h2>{title}</h2>
-        <p className="hala-achievements-container-desc">{desc}</p> */}
       <SectionHeader
         sectionTitle={sectionInfo.title}
         sectionBrief={sectionInfo.brief}
@@ -44,29 +41,7 @@ export const OurAchievements = ({ title, desc }) => {
             cardBrief={achievement.brief}
           />
         ))}
-        {/* <div className="hala-card-item">
-            <h3>3+ Years of Excellence</h3>
-            <p className="hala-card-item-desc">
-              With over 3 years in the industry, we've amassed a wealth of
-              knowledge and experience.
-            </p>
-          </div>
-          <div className="hala-card-item">
-            <h3>Happy Clients</h3>
-            <p className="hala-card-item-desc">
-              Our greatest achievement is the satisfaction of our clients. Their
-              success stories fuel our passion for what we do.
-            </p>
-          </div>
-          <div className="hala-card-item">
-            <h3>Industry Recognition</h3>
-            <p className="hala-card-item-desc">
-              We've earned the respect of our peers and industry leaders, with
-              accolades and awards that reflect our commitment to excellence.
-            </p>
-          </div> */}
       </div>
-      {/* </div> */}
     </div>
   );
 };

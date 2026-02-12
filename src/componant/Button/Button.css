@@ -64,9 +64,19 @@
 .mr-contact-button {
     background: var(--black-primary);
     border: 1px solid var(--grey-15);
+    padding: 16px 24px !important;
+
+    @media(max-width:1440px) {
+        padding: 14px 20px !important;
+    }
 }
 
-.mr-contact-button:active {
+.mr-contact-button:hover {
+    background: var(--grey-10);
+    border: 1px solid var(--grey-15);
+}
+
+.mr-contact-button:focus {
     background: var(--purple-60);
     border-color: var(--purple-60);
 }

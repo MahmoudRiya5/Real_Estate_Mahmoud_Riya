@@ -69,11 +69,7 @@ const FAQ = () => {
   return (
     <section className="faqSectionContainer">
       <div className="faqContainer">
-        {/* <Sparkles /> */}
-        {/* <Title */}
-        {/* title="Frequently Asked Questions" */}
-        {/* subTitle="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way." */}
-        {/* /> */}
+
 
         <SectionHeader
           sectionTitle={sectionInfo.title}

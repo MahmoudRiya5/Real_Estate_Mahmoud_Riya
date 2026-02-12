@@ -2,17 +2,21 @@
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+
     button {
-        width: 58px;
-        height: 58;
-        padding:14px 14px 14px 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
         border: 1px solid var(--grey-15);
         border-radius: 50%;
         background-color: var(--black-primary);
 
-        img{
+        img {
             width: 30px;
         }
+
         &:hover {
             background-color: var(--grey-10);
 
@@ -26,7 +30,7 @@
 @media (max-width: 1440px) {
     .arrowsIcons {
         button {
-            padding: 14px 22px;
+            padding: 10px;
         }
     }
 }

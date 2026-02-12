@@ -54,14 +54,11 @@ const Experience = () => {
   };
   return (
     <section className="LS-experience-section container">
-      {/* <Sparkles/> */}
-      {/* <Title */}
-      {/* title="Navigating the Estatein Experience" */}
-      {/* subTitle="At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works." */}
-      {/* /> */}
+      <SectionHeader
+        sectionTitle={sectionInfo.title}
+        sectionBrief={sectionInfo.brief}
+      />
 
-      <SectionHeader sectionTitle={sectionInfo.title} sectionBrief={sectionInfo.brief}/>
-      
       <div className="LS-experience-main-container">
         <div className="LS-experience-row LS-top-row">
           {steps.slice(0, 3).map(stepCards)}

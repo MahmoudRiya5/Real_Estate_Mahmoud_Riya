@@ -17,34 +17,12 @@ const PropertyValuation = ({
   };
   return (
     <section className="LS-valuation-container">
-      {/*  القسم الأول: العنوان والوصف */}
-      {/* <div className="LS-valuation-intro"> */}
-      {/* <h2 className="main-heading">{mainHeading}</h2> */}
-      {/* <p className="body ">{mainDesc}</p> */}
-      {/* </div> */}
 
       <SectionHeader sectionTitle={mainHeading} sectionBrief={mainDesc} />
 
       {/* القسم الثاني: يحتوي على الكروت ولوحة الـ Unlock */}
       <div className="LS-valuation-content-grid">
-        {/* صف الكروت الثلاثة الأولى */}
-        {/* <div className="LS-top-cards-row">
-          {cards.slice(0, 3).map((card, index) => (
-            <div key={index} className="LS-valuation-card">
-              <div className="LS-card-header">
-                <div className="LS-icon-circle-container">
-                  <img
-                    src={card.icon}
-                    alt={card.title}
-                    className="LS-card-icon"
-                  />
-                </div>
-                <h3 className="subheading-2">{card.title}</h3>
-              </div>
-              <p className="body">{card.desc}</p>
-            </div>
-          ))}
-        </div> */}
+      
         <div className="LS-top-cards-row">
           {cards.slice(0, 3).map((card) => (
             <InvestmentCard

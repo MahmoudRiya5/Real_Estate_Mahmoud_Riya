@@ -1,36 +1,46 @@
+import { Link } from "react-router-dom";
+import "./NavBar.css";
+import { useState } from "react";
+import ContactButton from "./../Button/ContactButton.jsx";
 
-import { Link } from 'react-router-dom'
-import './NavBar.css'
-import { useState } from 'react';
-const NavBar = ({items=[],btn}) => {
-  const [show,setshow] = useState(false);
+const NavBar = ({ items = [], btn }) => {
+  const [show, setshow] = useState(false);
   return (
-    <nav className={`ALi-nav ${show ? 'nav-open' : ''}`}>
+    <nav className={`ALi-nav ${show ? "nav-open" : ""}`}>
       <div className="ALi-logo">
-        <img src="./assets/icons/estatelogo.png" alt="navicon" className="Ali-img"/>
+        <img
+          src="./assets/icons/estatelogo.png"
+          alt="navicon"
+          className="Ali-img"
+        />
       </div>
 
-      <ul className={`ALi-ul ${show ? 'open' : ''}`}>
-        {items.map((item,index)=>{
-          return(
-            <li key={index}><Link to={item.href}>{item.content}</Link></li>
-          )
+      <ul className={`ALi-ul ${show ? "open" : ""}`}>
+        {items.map((item, index) => {
+          return (
+            <li key={index}>
+              <Link to={item.href}>{item.content}</Link>
+            </li>
+          );
         })}
       </ul>
 
-      <div className={`ALi-contacticon ${show ? 'open' : ''}`}>
-        <button className="ALi-maincontacticon"><Link to="/contact">{btn}</Link></button>
+      <div className={`ALi-contacticon ${show ? "open" : ""}`}>
+        {/* <button className="ALi-maincontacticon">
+          <Link to="/contact">{btn}</Link>
+        </button> */}
+        <ContactButton buttonLabel="Contact Us" toTarget="/contact" />
       </div>
 
-      <button onClick={() => setshow(prev => !prev)} className="Ali-showicon" aria-expanded={show}>
+      <button
+        onClick={() => setshow((prev) => !prev)}
+        className="Ali-showicon"
+        aria-expanded={show}
+      >
         <img src="./assets/icons/barsicon.png" alt="barsicon" />
       </button>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
-
-
-
-
+export default NavBar;

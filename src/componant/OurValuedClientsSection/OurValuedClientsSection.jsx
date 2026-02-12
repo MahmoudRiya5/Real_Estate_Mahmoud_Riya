@@ -53,7 +53,7 @@ import SectionHeader from "../SectionHeader/SectionHeader.jsx";
 //         sectionTitle={sectionInfo.title}
 //         sectionBrief={sectionInfo.brief}
 //       />
-      
+
 //       <div className="mr-cards-with-slider">
 //         <div className="mr-our-clients-cards-section">
 //           {clients.map((client,index) => (
@@ -61,7 +61,7 @@ import SectionHeader from "../SectionHeader/SectionHeader.jsx";
 //               key={client.key}
 //               className={`
 //                 mr-client-card ${currentIndex === index ? "is-selected" : ""}
-//             `} 
+//             `}
 //             >
 //             <ClientCard
 //               cardDate={client.cardDate}
@@ -91,7 +91,6 @@ import SectionHeader from "../SectionHeader/SectionHeader.jsx";
 // };
 
 // export default OurValuedClientsSection;
-
 
 const OurValuedClientsSection = () => {
   const clients = [

@@ -13,18 +13,6 @@ const LetConnect = () => {
   return (
     <section className="ls-contact-section ">
       <div className="ls-contact-container">
-        {/* الـ div الأول: الرأسية (العنوان والوصف) */}
-        {/* <div className="ls-contact-header">
-          <h2 className="section-title">Let's Connect</h2>
-          <p className="body">
-            We're excited to connect with you and learn more about your real
-            estate goals. Use the form below to get in touch with Estatein.
-            Whether you're a prospective client, partner, or simply curious
-            about our services, we're here to answer your questions and provide
-            the assistance you need.
-          </p>
-        </div> */}
-
         <SectionHeader
           sectionTitle={sectionInfo.title}
           sectionBrief={sectionInfo.brief}
@@ -107,10 +95,6 @@ const LetConnect = () => {
                 buttonLabel="Send Your Message"
                 buttonType="submit"
               />
-
-              {/* <button type="submit" className="ls-send-btn button">
-                Send Your Message
-              </button> */}
             </div>
           </form>
         </div>

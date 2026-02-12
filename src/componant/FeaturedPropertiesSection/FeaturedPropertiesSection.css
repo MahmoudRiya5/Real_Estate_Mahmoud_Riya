@@ -7,14 +7,14 @@
     width: 100%;
     gap: 80px;
     padding: 0px 162px;
-    margin: 55px 0px;
+    /* margin: 55px 0px; */
 
     /* featured-properties-section for laptop size */
     @media (max-width:1440px) {
         gap: 60px;
         width: 100%;
         padding: 0px 80px;
-        margin: 45px 0px;
+        /* margin: 45px 0px; */
     }
 
     /* featured-properties-section for mobile size */
@@ -22,7 +22,7 @@
         gap: 40px;
         width: 100%;
         padding: 0px 16px;
-        margin: 42.5px 0px;
+        /* margin: 42.5px 0px; */
     }
 }
 
